@@ -1,5 +1,7 @@
 // Place in src/App.js after you upload your enhanced logo
 import React from "react";
+import './App.css';
+
 import logo from "./logo.svg"; // Replace with your enhanced logo file!
 
 export default function App() {
@@ -135,8 +137,42 @@ export default function App() {
         }}>
           Contact Us
         </a>
-        <div style={{ marginTop: 12, color: "#7ed957", fontSize: "1rem" }}>
-          Follow us: <a href="#" style={{ color: "#7ed957" }}>Instagram</a> | <a href="#" style={{ color: "#7ed957" }}>X</a>
+        <br />
+        <br />
+        <div>
+          <span>
+            Follow us:   
+            <button
+              style={{
+                background: "none",
+                border: "none",
+                color: "#7ed957",
+                textDecoration: "underline",
+                cursor: "pointer",
+                padding: 0,
+                fontSize: "inherit"
+              }}
+              onClick={() => alert('Instagram link coming soon!')}
+            >
+              Instagram
+            </button>
+            {" | "}
+            <button
+              style={{
+                background: "none",
+                border: "none",
+                color: "#7ed957",
+                textDecoration: "underline",
+                cursor: "pointer",
+                padding: 0,
+                fontSize: "inherit"
+              }}
+              onClick={() => alert('X link coming soon!')}
+            >
+              X
+            </button>
+          </span>
+
         </div>
       </section>
 
